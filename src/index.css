@@ -68,18 +68,18 @@ body {
 
 .poster {
   position: absolute;
-
-  left: 0;
-  top: 0;
+  inset: 0;
 
   width: 100%;
   height: 100%;
 
   background-image: url("/nostalgia-india.png");
 
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center center;
   background-repeat: no-repeat;
+
+  background-color: #080604;
 
   overflow: hidden;
 }
@@ -499,31 +499,32 @@ body {
 
 @media (max-width: 600px) {
 
+  .poster {
+    background-size: contain;
+    background-position: center center;
+  }
+
   .player-content {
-    padding:
-      25px
-      15px
-      18px;
+    padding: 20px 12px 15px;
   }
 
   .welcome {
-    font-size: 10px;
-
+    font-size: 9px;
     letter-spacing: 2px;
   }
 
   .radio {
     font-size: 6px;
-
     letter-spacing: 2px;
   }
 
   .song-info {
-    width: 95%;
+    width: 94%;
   }
 
   .song-info h1 {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.3;
   }
 
   .song-info p {
@@ -535,17 +536,15 @@ body {
   }
 
   .control-button {
-    width: 45px;
-    height: 45px;
-
-    font-size: 16px;
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
   }
 
   .play-button {
-    width: 60px;
-    height: 60px;
-
-    font-size: 21px;
+    width: 58px;
+    height: 58px;
+    font-size: 20px;
   }
 
   .controls {
@@ -558,7 +557,6 @@ body {
 
   .footer {
     font-size: 6px;
-
     letter-spacing: 2px;
   }
 }
