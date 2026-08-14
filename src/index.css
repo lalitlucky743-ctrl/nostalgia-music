@@ -589,3 +589,23 @@ body {
     margin-bottom: 8px;
   }
 }
+.music-player {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.poster {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}

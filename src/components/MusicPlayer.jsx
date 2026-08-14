@@ -599,6 +599,7 @@ export default function MusicPlayer() {
             </div>
 
           </div>
+        
 
 
           {/* FOOTER */}
